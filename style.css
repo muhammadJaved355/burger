@@ -28,6 +28,7 @@ header{
 nav {
 display: flex;
 } 
+
 nav a {
   font-weight: 700;
   font-size: 20px;
@@ -97,7 +98,39 @@ main p {
   color: #858585;
   text-align: center;
 }
-
+.close-icon{
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  /* font-size: 20px; */
+  cursor: pointer;
+  display: none;
+}
+/* x close end here */
+/* humburger start here */
+.hunburger_menu_container{
+  overflow: hidden;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  display: none;
+  /* margin-top: 10px; */
+}
+.humbuger_Icon{
+  font-size: 22px;
+  position: absolute;
+  left: 27px;
+  bottom: 16px;
+}
+.humburger_menu{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -40px;
+  right: -35px;
+  background-color: white;
+}
 @media (max-width:1200px){
   header{
     padding: 16px 24px;
@@ -126,19 +159,26 @@ main p {
 }
 @media (max-width:768px){
   header{
+    
     background-color: #f6f0ebd5;
     backdrop-filter: blur(4px);
     position: sticky;
     top: 0;
   }
+  .headerContainer {
+    min-height: 100px;
+  }
+ 
   nav{
     position: absolute;
     background-color:white;
-    opacity: 0.8;
+    opacity: 0.9;
     flex-direction: column;
-    right: 0;
-    top: 0;
+    right: 10px;
+    top: 20px;
     padding: 24px;
+    display: none;
+    
   }
   nav a+a{
     margin: 0;
@@ -157,5 +197,15 @@ main p {
 }
 .goto a {
   font-size: 12px;
+}
+.close-icon,
+  .hunburger_menu_container{
+    display: block;
+  }
+.menu_open nav{
+  display: flex;
+}
+.menu_open .hunburger_menu_container{
+display: none;
 }
 }
