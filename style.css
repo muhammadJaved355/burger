@@ -111,8 +111,8 @@ main p {
 .hunburger_menu_container{
   overflow: hidden;
   position: relative;
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   display: none;
   /* margin-top: 10px; */
 }
@@ -166,7 +166,7 @@ main p {
     top: 0;
   }
   .headerContainer {
-    min-height: 100px;
+    min-height: 70px;
   }
  
   nav{
